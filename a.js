@@ -1,0 +1,743 @@
+// var name = "Ridoy";
+// const age = "27";
+// let country = "bangladesh";
+
+// console.log(age);
+// console.log(country);
+// console.log(name);
+
+// const a = 4 - "hello";
+// console.log(a); //NaN
+
+// const b = 4 / 0;
+// console.log(b); //Infinity
+
+// console.log(100 >= 10);
+
+// console.log(10 != '10'); // not typeof check just number check
+// console.log(10 !== '10'); // typeof check just number too check
+
+// if (3 < 10) {
+//   console.log("i have a smaller value");
+// }
+
+// var biriyaniPrice = 250;
+
+// if (biriyaniPrice < 300) {
+//   console.log("mama give me some biriyani");
+// }
+
+// var weight = 20;
+// if (weight < 20) {
+//  console.log("I will carry");
+
+// } else {
+//  console.log("I will not");
+
+// }
+
+// const number = 7;
+// if (number < 1) {
+//   console.log("Choto ekta number paisy");
+// }
+// console.log("Something new is cooking");
+
+// const num = 0;
+// while (num < ) {
+//   console.log("loooping", num);
+// }
+// let num = 0;
+// while (num < 5) {
+//  console.log("loooping", num);
+//  // num = num + 1;
+//  // num += 1;
+//  num++;
+// }
+
+// let num = 1;
+// while (num < 10) {
+//   console.log(num);
+//   num++;
+// }
+
+// for (let num = 0; num <= 5; num++) {
+//   console.log(num);
+// }
+// for (let num = 0; num <= 5; num = num + 2) {
+//   console.log(num);
+// }
+
+// for (let num = 10; num >= 0; num--) {
+//   console.log(num);
+// }
+// for (let i = 0; i < 20; i++)
+//   if (i % 2 === 1) {
+//     console.log(i);
+//   }
+
+// for (let i = 0; i <= 30; i++) {
+//   if (i % 3 === 0 || i % 5 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 0; i < 150; i++) {
+//   console.log(i);
+//   if (i >= 5) {
+//     break;
+//   }
+// }
+// console.log("Here is");
+
+// let i = 54;
+// while (i > 25) {
+//   if (i < 50) {
+//     break;
+//   }
+//   console.log(i);
+//   i--;
+// }
+
+// let n = 0;
+// while (n < 15) {
+//   n++;
+//   if (n % 5 !== 0) {
+//     continue;
+//   }
+//   console.log(n);
+// }
+
+// do while loop
+// let n = 0;
+// do {
+//  console.log(n);
+//  n++;
+
+// }
+// while (n < 5)
+// array
+
+// const numbers = [
+//   1, 3, 45, 46, 58, 94, 45, 46, 58, 94, 45, 46, 58, 94, 45, 46, 58, 94, 45, 46,
+//   58, 94, 45, 46, 58, 94, 45, 46, 58, 94, 45, 46, 58, 94, 45, 46, 58, 94, 45,
+//   46, 58, 94, 45, 46, 58, 94, 45, 46, 58, 94, 9, 88,
+// ];
+// console.log(numbers.length);
+
+// pop
+// const friends = ["balam", "sdgfd", "sfdsegf", "rtgfsx", "sfgye", "aaaallhs"];
+// console.log(friends);
+
+// friends.pop();
+// console.log(friends);
+
+// friends.shift();
+// console.log(friends);
+
+// friends.unshift("gumailam");
+// console.log(friends);
+
+// const friends = ["balam", "sdgfd", "sfdsegf", "rtgfsx", "sfgye", "aaaallhs"];
+// const nums = [];
+// const food = "ros o gools a";
+// const age = 12;
+// console.log(Array.isArray(friends));
+// console.log(Array.isArray(nums));
+// console.log(Array.isArray(food));
+// console.log(Array.isArray(age));
+
+// introduce jabascript builting function
+// const country = "Bangladesh";
+// const division = "Newkhale";
+// const district = `B-Baria`;
+// const boolean = true;
+// const asdsd = "12";
+// const number = 84;
+// const thana = new String("Demra");
+
+// console.log(typeof country);
+// console.log(typeof division);
+// console.log(typeof district);
+// console.log(typeof boolean);
+// console.log(typeof asdsd);
+// console.log(typeof asdsasd);
+// console.log(typeof thana);
+
+// const numbers = [54, 98, 78, 21, 65];
+
+// const school = "RAJ UK Uttara Model School";
+// // console.log(school);
+
+// const subject = "Chemistry";
+// const book = "ChemIsTry";
+
+// if (subject.toLowerCase() === book.toLowerCase()) {
+//   console.log("I am reading book");
+// } else {
+//   console.log("I am entertainment");
+// }
+
+// const drink = "  water";
+// const liquid = "water  ";
+
+// if (drink.trim() === liquid.trim()) {
+//   console.log("pani er opor nam life");
+// } else {
+//   console.log("somudre pani ase kintu khaite pari na");
+// }
+
+// split
+// const friendsStr = "Rahim,karim,dhahim,cahim,sahim";
+// const friends = friendsStr.split(",");
+// console.log(friends);
+
+// concat
+// const first = "Abid";
+// const last = "Nabid";
+
+// // const fullName = first + last;
+// const fullName = first + " " + last;
+// // console.log(fullName);
+
+// const fullName2 = first.concat(" ").concat(last);
+// console.log(fullName2);
+
+// const sentence = 'I am learning Web Dev.';
+// // const result = ".yodiR ma I"
+
+// let reverse = '';
+// for (const letter of sentence) {
+//   // console.log(letter);
+//   reverse = letter + reverse;
+// }
+// console.log(reverse);
+// let rev = '';
+// for (let i = 0; i < sentence.length; i++) {
+//   // console.log(i);
+//   // console.log(sentence[i]);
+//   const letter = sentence[i];
+//   rev = letter + rev;
+// }
+// console.log(rev);
+
+// // shortcut
+// const reversed = sentence.split('').reverse().join('');
+// console.log(reversed);
+
+// const college = {
+//   name: 'vnx',
+//   class: ['11', '12', '13'],
+//   events: ['science fair', 'sports fair', '21 Feb'],
+//   unique: {
+//     color: 'blue',
+//     result: {
+//       gpa: 5,
+//       merit: 'top',
+//     },
+//   },
+// };
+// college.unique.result.merit = 'top top top most';
+// console.log(college['unique'].result.merit);
+// college.events[1] = 'maria kibti';
+// console.log(college.events[1]);
+
+// const mobile = {
+//   brand: 'samsung',
+//   price: 25000,
+//   color: 'black',
+//   camera: '12mp',
+//   isNew: true,
+// };
+
+//for of : array
+//for in : object
+// for (const prop in mobile) {
+//   console.log(prop);
+//   console.log(mobile[prop]);
+// }
+// const keys = Object.keys(mobile);
+// console.log(keys);
+
+// for (const key of keys) {
+//   console.log(key, ':', mobile[key]);
+// }
+
+// const pen = { brand: 'econo', price: 10, color: 'black' };
+// const pencil = new Object();
+// console.log(pencil);
+
+// const rubber = Object.create({});
+// console.log(rubber);
+
+//using new
+
+// primitive for javascript
+// const price = 600; // number
+// const name = 'triple h angle rikishi'; // string
+// const isPoor = false; // boolean
+
+// // non-primitive for javascript
+// const friends = ['austin', 'rock', 'taker'];
+// const student = {
+//   name: 'kodom ali',
+//   age: 22,
+//   movies: ['king', 'dhakar mastan'],
+//   address: 'kola bagan',
+// };
+
+// condition
+// if (price > 1000) {
+//   console.log('too expensive not for me');
+// } else if (price > 500) {
+//   console.log('ok i can buy it');
+// } else {
+//   console.log('within budget');
+// }
+
+// // loop +
+// let pushUp = 0;
+// while (pushUp < 10) {
+//   console.log('push up', pushUp);
+//   // pushUp = pushUp + 1;
+//   // pushUp += 1;
+//   pushUp++;
+// }
+
+// // loop -
+// let pushUp = 0;
+// while (pushUp > -10) {
+//   console.log('push up', pushUp);
+//   // pushUp = pushUp + 1;
+//   // pushUp += 1;
+//   pushUp--;
+// };
+
+// const fruits = ['apple', 'orange', 'grape', 'banana', 'mango'];
+// // console.log(fruits[2]);
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+//   console.log(fruits[i]);
+// }
+
+// const numbers = [11, 22, 33, 44, 55, 66, 77, 88, 99];
+
+// let k = 0;
+// while (k < numbers.length) {
+//   console.log(numbers[k]);
+//   k++;
+// }
+
+// const ages = [1, 5, 100, 15, 8, 2, 28];
+// // console.log(ages);
+// ages.sort();
+// console.log(ages);
+
+// // ascending
+// const sorted_ages = ages.sort(function (a, b) {
+//   return a - b;
+// });
+// console.log(sorted_ages);
+
+// // descending
+// const sorted_ages_desc = ages.sort(function (a, b) {
+//   return b - a;
+// });
+// console.log(sorted_ages_desc);
+
+// const number = [1, 2, 43, 54, 4];
+// const players = [{}, {}, {}];
+// const employees = [
+//   {
+//     name: 'underTaker',
+//     designation: 'american bad ass',
+//     status: '60000',
+//     attack: 'head stunn',
+//   },
+//   {
+//     name: 'stoneCold Steve Austin',
+//     designation: 'bear',
+//     status: '50000',
+//     attack: 'Stunner',
+//   },
+//   {
+//     name: 'Rock',
+//     designation:
+//       "electrifying man",
+//     status: '40000',
+//     attack: 'Electry fy mood',
+//   },
+//   {
+//     name: 'Triple H',
+//     designation: 'king of kings',
+//     status: '30000',
+//     attack: 'neck stun',
+//   },
+// ];
+// // console.log(employees[2].status);
+// // console.log(employees[2].designation);
+
+// // for (const employee of employees) {
+// //   console.log(employee.attack, employee.designation);
+// // }
+
+// // employees[0].name = 'kurt'
+
+// for (const emp of employees) {
+//   const person = emp;
+//   const personInfo = person.name + ': ' + person.status;
+//   console.log(personInfo);
+// }
+
+// this is too
+
+// for (const { name, status } of employees) {
+//   // Using template literals for cleaner string formatting
+//   console.log(`${name}: ${status}`);
+// }
+
+// new
+
+// const numbers = [1, 2, 5, 6, 8];
+// const tournament_runs = [[], [], []];
+// const exam_marks = [
+//   [98, 87, 45, 12, 63],
+//   [88, 77, 66, 55, 44],
+//   [11, 22, 33, 44, 55],
+//   [10, 20, 30, 40, 50],
+// ];
+// // console.log(numbers[2]);
+// // console.log(exam_marks[1][2]);
+
+// const first_class_marks = exam_marks[0];
+// console.log(first_class_marks[0]);
+// // console.log(exam_marks[3][4]);
+
+// exam_marks[0][1] = 600;
+// exam_marks[1].pop();
+// exam_marks[1].push(5000);
+
+// // console.log(exam_marks);
+// for (const marks of exam_marks) {
+//   console.log(marks);
+// }
+
+// copy.js part (Module:18_7) 2d dimensional array Matrix
+
+// primitive
+// let price = 25;
+// let comp_price = price;
+
+// price = 12;
+// comp_price = 20;
+
+// console.log(price);
+// console.log(comp_price);
+
+// second Method
+
+// non- primitive]
+// const products = [25, 25, 25];
+// const comp_products = [];
+
+// // const comp_products = products;
+
+// for (const product of products) {
+//   comp_products.push(product);
+// }
+// comp_products[0] = 15;
+// products[1] = 55;
+
+// console.log(products);
+// console.log(comp_products);
+
+// Third method
+
+// const numbers = [1, 2, 3, 4];
+// const new_numbers = Array.from(numbers);
+// const new_numbers = [].concat(numbers);
+// // const new_numbers = [...numbers];
+// // numbers.push(18);
+// new_numbers.push(18);
+
+// console.log(numbers);
+// console.log(new_numbers);
+
+// shallow copy vs deep copy
+
+// function.js 19-1 part
+
+// const number = 45;
+
+// // function declare
+// function fanOffKor() {
+//   console.log('bosa theke ute dara');
+//   console.log('walk towards the switch');
+//   console.log('click the switch to off the fan');
+// }
+
+// // call the fuction
+// fanOffKor();
+
+// function brushTeeth() {
+//   console.log('pick up the brush');
+//   console.log('add paste');
+//   console.log('2 min gos egose fena felo');
+// }
+// brushTeeth();
+
+// parameter .js
+
+// function vattkhao() {
+//   console.log('hand wash kore aso');
+//   console.log('boso');
+//   console.log('palte e khabar dabar nao');
+//   console.log('gopat gopat kore khao ');
+// }
+// vattkhao();
+// 3 --> 3 * 3 = 9
+// 4 --> 4 * 4 = 16
+// 5 --> 5 * 5 = 25
+// 11 --> 11 * 11 = 121
+
+// function square(number) {
+//   console.log('value of number parameter', number);
+//   const borgo = number * number;
+//   console.log('square of ther given is: ', borgo);
+// }
+
+// square(4);
+// console.log('--------------');
+// square(12);
+// console.log('--------------');
+// square(5);
+// console.log('--------------');
+// square(99);
+
+// // second method
+// function add(num1, num2) {
+//   const sum = num1 + num2;
+//   console.log(sum);
+// }
+// add(5, 71);
+// add(65, 31);
+
+// // third method
+// function addAll(a, b, c, d, e) {
+//   const total = a + b + c + d + e;
+//   console.log(a, b, c, d, e);
+
+//   console.log(total);
+// }
+// addAll(19, 88, 35, 45, 58);
+
+// argument.js class
+
+// function doubleIt(number) {
+//   const doubled = number * 2;
+//   console.log(number, doubled);
+// }
+
+// console.log('I will call the function');
+
+// // সরাসরি নম্বর দিতে পার
+// doubleIt(15);
+// console.log('-----------------');
+// doubleIt(88);
+// console.log('-----------------');
+// doubleIt(887);
+
+// // সরাসরি ভেরিয়াবলো দিতে পার
+// const number = 55;
+// doubleIt(number);
+// const money = 112;
+// doubleIt(money);
+// const price = 551;
+// doubleIt(price);
+
+// // second method
+
+// function difference(num1, num2) {
+//   const diff = num1 - num2;
+//   console.log(num1, num2, 'difference is: ', diff);
+// }
+
+// const fatherAge = 40;
+// const myAge = 10;
+// difference(fatherAge, myAge);
+
+// // return.js class
+// function tenTimes(number) {
+//   const result = number * 10;
+//   return result;
+// }
+// // function cutHalf(number) {
+// //   const half = number / 2;
+// //   return half;
+// // }
+
+// tenTimes(5);
+
+// const result = tenTimes(5);
+// console.log('output', result);
+// const bigNumber = tenTimes(99);
+// console.log('output', bigNumber);
+
+// // recap.js class
+// function add(price1, price2) {
+//   const total = price1 + price2;
+//   return total;
+// }
+// const bill = add(5, 80);
+// // console.log(bill);
+
+// function add2(price1, price2) {
+//   return price1 + price2;
+// }
+// const bill2 = add2(5, 800);
+// console.log(bill, bill2);
+
+// // second method
+
+// function doMath(num1, num2) {
+//   const sum = num1 + num2;
+//   const diff = num1 - num2;
+//   const multiply = sum * diff;
+//   const result = multiply / 2;
+//   return result;
+// }
+// const result = doMath(10, 5);
+// console.log(result);
+
+// // conditional_return.js class
+
+// // third method (one class)
+// function isEven(number) {
+//   if (number % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// // console.log(isEven(5));
+// // console.log(isEven(110));
+
+// function isOdd(number) {
+//   if (number % 2 === 1) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(isOdd(10));
+// console.log(isOdd(7));
+
+// various-params.js class
+
+/**
+ * for a given string tell me whether it has even number of characters or not
+ *
+ */
+
+// function evenSizedString(str) {
+//   const size = str.length;
+//   console.log(str, size);
+//   if (size % 2 === 0) {
+//     console.log('even size');
+//     return true;
+//   } else {
+//     console.log('odd size');
+//     return false;
+//   }
+// }
+// // evenSizedString('Dhaka');
+// // evenSizedString('faka');
+
+// // second method
+
+// function doubleOrTriple(number, doDouble) {
+//   if (doDouble === true) {
+//     const result = number * 2;
+//     return result;
+//   } else {
+//     const result = number * 3;
+//     return result;
+//   }
+// }
+// console.log(doubleOrTriple(5, true));
+// console.log(doubleOrTriple(5, false));
+
+// function numberOfElementrs(numbers) {
+//   const len = numbers.length;
+//   return len;
+// }
+// numberOfElementrs([12, 45, 78, 98, 12, 45]);
+
+// function getAge(person) {
+//   const age = person.age;
+//   return age;
+// }
+
+// // array.operation.js
+// /**
+//  * Objective: write a function to give the sum, of all numbers in a array
+//  * step-1: declare a function
+//  * step-2: call check whether the function is called properly
+//  * step-3: set a parameter(s)
+//  * srep-4: pass the parameter(s), check whether parameter is passed in a propper format
+//  * setp-5: do the function task (step by step)
+//  */
+
+// function sumOfNumbers(numbers) {
+//   let sum = 0;
+//   for (const number of numbers) {
+//     console.log(number);
+//     sum = sum + number;
+//   }
+//   return sum;
+// }
+// const numbs = [54, 62, 12, 6];
+// const sum = sumOfNumbers(numbs);
+// console.log('Sum of numbers is', sum);
+
+// // even-only.js class
+// /**
+//  * craete fuynction that will return only the =even nuymbers
+//  * return the sum of evnn numbers
+//  *
+//  */
+
+// function evenNumbersOnly(numbers) {
+//   const evens = [];
+//   for (const number of numbers) {
+//     if (number % 2 === 0) {
+//       // console.log(number);
+//       evens.push(number);
+//     }
+//   }
+//   return evens;
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const evens = evenNumbersOnly(numbers);
+// console.log('Even Number:', evens);
+// // second method এবার আমি যোগফল চাই !
+// function sumOfEvenNumbers(numbers) {
+//   let sum = 0;
+//   for (const number of numbers) {
+//     if (number % 2 === 0) {
+//       // console.log(number);
+//       sum = sum + number;
+//     }
+//   }
+//   return sum;
+// }
+
+// const sum = sumOfEvenNumbers(numbers);
+// console.log('Sum of even numbers:', sum);
+
+
+// module 20-1 
+
+
