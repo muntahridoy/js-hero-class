@@ -737,27 +737,63 @@
 // const sum = sumOfEvenNumbers(numbers);
 // console.log('Sum of even numbers:', sum);
 
-// module 20-2
-// convert.js class
-// 12 inch 1 feet
-function inchToFeet(inch) {
-  const feet = inch / 12;
-  return feet;
-}
-// not ignore
-function inchToFeet2(inch) {
-  const feetFraction = inch / 12;
-  const feetNumber = parseInt(feetFraction);
-  const inchRemaining = inch % 12;
-  const result = feetNumber + ' fit ' + inchRemaining + ' inch';
-  return result;
-}
-const shuvoHeight = inchToFeet(75);
-// console.log(shuvoHeight);
-const shuvoHeight2 = inchToFeet2(75);
-// console.log(shuvoHeight2);
+// // module 20-2
+// // convert.js class
+// // 12 inch 1 feet
+// function inchToFeet(inch) {
+//   const feet = inch / 12;
+//   return feet;
+// }
+// // not ignore
+// function inchToFeet2(inch) {
+//   const feetFraction = inch / 12;
+//   const feetNumber = parseInt(feetFraction);
+//   const inchRemaining = inch % 12;
+//   const result = feetNumber + ' fit ' + inchRemaining + ' inch';
+//   return result;
+// }
+// const shuvoHeight = inchToFeet(75);
+// // console.log(shuvoHeight);
+// const shuvoHeight2 = inchToFeet2(75);
+// // console.log(shuvoHeight2);
 
-function mileToKiometer(mile) {
-  const kilo = mile * 1.60934;
-  return kilo;
+// // second method
+
+// // Mile → Kilometer
+// function mileToKilometer(mile) {
+//   const kilo = mile * 1.60934;
+//   return kilo;
+// }
+
+// // Kilometer → Mile
+// function kilometeToMiles(kilo) {
+//   const mile = kilo * 0.621371;
+//   return mile;
+// }
+
+// const distanceInMiles = 5; // 5 miles
+// const distanceInKilometers = 8; // 8 km
+// // Convert mile → kilometer
+// const milesToKm = mileToKilometer(distanceInMiles);
+// // Convert kilometer → mile
+// const kmToMiles = kilometeToMiles(distanceInKilometers);
+
+// console.log(distanceInMiles + ' mile = ' + milesToKm.toFixed(2) + ' km');
+// console.log(distanceInKilometers + ' km = ' + kmToMiles.toFixed(2) + ' mile');
+
+// leap-yaer.js class
+
+/**
+ * Simple Logic
+ * year will be a leap year if the year is divisible by 4
+ *
+ */
+function isLeapYear(year) {
+  if (year % 4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
+const isLipi = isLeapYear(2043);
+console.log(isLipi);
