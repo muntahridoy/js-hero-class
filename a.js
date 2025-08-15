@@ -781,41 +781,60 @@
 // console.log(distanceInMiles + ' mile = ' + milesToKm.toFixed(2) + ' km');
 // console.log(distanceInKilometers + ' km = ' + kmToMiles.toFixed(2) + ' mile');
 
-// leap-yaer.js class
+// // leap-yaer.js class
 
+// /**
+//  * Simple Logic
+//  * year will be a leap year if the year is divisible by 4
+//  *
+//  */
+// function isLeapYear(year) {
+//   if (year % 4 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// const isLipi = isLeapYear(2043);
+// console.log(isLipi);
+// /**
+//  * 1. those year that is not divisible by 100 and  if the year is divisible by 4: then it will be a  leap year
+//  * 2. if the year is divisible by 400, than it is a leap year
+//  * 3. else it is not a leap year
+//  *
+//  */
+
+// function isLeapYear2(year) {
+//   if (year % 100 !== 0 && year % 4 === 0) {
+//     return true;
+//   } else if (year % 100 === 0 && year % 400 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// const isLeap = isLeapYear2(2100);
+// const isLeap2 = isLeapYear2(2400);
+// const isLeap3 = isLeapYear2(1900);
+// const isLeap4 = isLeapYear2(2052);
+// console.log(isLeap, isLeap2, isLeap3, isLeap4);
+
+// odd.average.js class
 /**
- * Simple Logic
- * year will be a leap year if the year is divisible by 4
+ * function takes an array as parameter
+ * give me average of the odd numbers in the array
  *
  */
-function isLeapYear(year) {
-  if (year % 4 === 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
-const isLipi = isLeapYear(2043);
-console.log(isLipi);
-/**
- * 1. those year that is not divisible by 100 and  if the year is divisible by 4: then it will be a  leap year
- * 2. if the year is divisible by 400, than it is a leap year
- * 3. else it is not a leap year
- * 
- */
 
-function isLeapYear2(year) {
-  if (year % 100 !== 0 && year % 4 === 0) {
-    return true;
-  } else if (year % 100 === 0 && year % 400 === 0) {
-    return true;
-  } else {
-    return false;
+function oddAverage(numbers) {
+  for (const number of numbers) {
+    if (number % 2 === 1) {
+      console.log(number);
+    }
   }
 }
 
-const isLeap = isLeapYear2(2100);
-const isLeap2 = isLeapYear2(2400);
-const isLeap3 = isLeapYear2(1900);
-const isLeap4 = isLeapYear2(2052);
-console.log(isLeap, isLeap2, isLeap3, isLeap4);
+const numbers = [42, 13, 58, 65, 81];
+const avg = oddAverage(numbers);
+console.log('Average of odd numbers:', avg);
