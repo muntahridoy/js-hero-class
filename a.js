@@ -396,6 +396,14 @@
 //   console.log(`${name}: ${status}`);
 // }
 
+
+
+
+
+
+
+
+// .............................................
 // new
 
 // const numbers = [1, 2, 5, 6, 8];
@@ -422,6 +430,17 @@
 //   console.log(marks);
 // }
 
+
+
+
+
+
+
+
+
+
+
+// .............................................
 // copy.js part (Module:18_7) 2d dimensional array Matrix
 
 // primitive
@@ -583,6 +602,9 @@
 // const bigNumber = tenTimes(99);
 // console.log('output', bigNumber);
 
+
+
+// .............................................
 // // recap.js class
 // function add(price1, price2) {
 //   const total = price1 + price2;
@@ -633,6 +655,8 @@
 // console.log(isOdd(10));
 // console.log(isOdd(7));
 
+
+// .............................................
 // various-params.js class
 
 /**
@@ -679,6 +703,8 @@
 //   return age;
 // }
 
+
+// .............................................
 // // array.operation.js
 // /**
 //  * Objective: write a function to give the sum, of all numbers in a array
@@ -700,6 +726,11 @@
 // const numbs = [54, 62, 12, 6];
 // const sum = sumOfNumbers(numbs);
 // console.log('Sum of numbers is', sum);
+
+
+
+
+// .............................................
 
 // // even-only.js class
 // /**
@@ -781,6 +812,7 @@
 // console.log(distanceInMiles + ' mile = ' + milesToKm.toFixed(2) + ' km');
 // console.log(distanceInKilometers + ' km = ' + kmToMiles.toFixed(2) + ' mile');
 
+// .............................................
 // // leap-yaer.js class
 
 // /**
@@ -820,37 +852,111 @@
 // const isLeap4 = isLeapYear2(2052);
 // console.log(isLeap, isLeap2, isLeap3, isLeap4);
 
-// odd.average.js class
-/**
- * function takes an array as parameter
- * give me average of the odd numbers in the array
- *
- */
 
-/**
- * 1. put odd numbers in an array
- */
+// .............................................
 
-function oddAverage(numbers) {
-  const odds = [];
-  for (const number of numbers) {
-    if (number % 2 === 1) {
-      // console.log(number);
-      odds.push(number);
-    }
-  }
-  // odds is the array that contains only the odd numbers
-  // console.log(odds);
-  let sum = 0;
-  for (const number of odds) {
-    sum = sum + number;
-  }
-  const count = odds.length;
-  console.log(sum, count);
-  const avg = sum / count;
-  return avg;
-}
+// // odd.average.js class
+// /**
+//  * function takes an array as parameter
+//  * give me average of the odd numbers in the array
+//  */
+// /**
+//  * 1. put odd numbers in an array
+//  */
 
-const numbers = [42, 13, 58, 65, 81, 96, 7];
-const avg = oddAverage(numbers);
-console.log('Average of odd numbers:', avg);
+// function oddAverage(numbers) {
+//   const odds = [];
+//   for (const number of numbers) {
+//     if (number % 2 === 1) {
+//       // console.log(number);
+//       odds.push(number);
+//     }
+//   }
+//   // odds is the array that contains only the odd numbers
+//   // console.log(odds);
+//   let sum = 0;
+//   for (const number of odds) {
+//     sum = sum + number;
+//   }
+//   const count = odds.length;
+//   console.log(sum, count);
+//   const avg = sum / count;
+//   return avg;
+// }
+
+// const numbers = [42, 13, 58, 65, 81, 96, 7];
+// const avg = oddAverage(numbers);
+// console.log('Average of odd numbers:', avg);
+
+// // no-duplicate.js class
+// /**
+//  * array has some duplicate elements
+//  */
+
+// const biriyanikhor = [
+//   'abul',
+//   'babul',
+//   'cabul',
+//   'abul',
+//   'babul',
+//   'dabul',
+//   'kabul',
+//   'cabul',
+// ];
+
+// const numbers = [1, 61, 5, 5, 81, 7, 5, 81, 61];
+
+// function noDuplicate(array) {
+//   const unique = [];
+//   for (const item of array) {
+//     // if the unique array does not already have this item, push it( some complexe )
+//     if (unique.includes(item) === false) {
+//       unique.push(item);
+//     }
+//   }
+//   return unique;
+// }
+// const uniqueArray1 = noDuplicate(biriyanikhor);
+// const uniqueArray2 = noDuplicate(numbers);
+// console.log(uniqueArray1);
+// console.log(uniqueArray2);
+
+
+
+
+
+// .............................................
+
+// math.js class
+
+// const Math = {
+//   min: function min(num1, num2) {
+//     return num2;
+//   },
+// };
+// console.log(Math.max);
+
+// const min = Math.min(45, 21, 65, 99, 126, 5, -99);
+// // console.log(min);
+// const max = Math.max(45, 21, 65, 99, 126, 5, -99);
+// console.log(max);
+
+// console.log(Math.PI);
+// console.log(Math.abs(5 - 10));
+// console.log(Math.round(2.25));
+// console.log(Math.round(2.85));
+// console.log(Math.floor(2.8545325));
+// console.log(Math.ceil(2.2545643));
+// console.log(Math.trunc(2.25345643));
+
+// console.log(Math.random());
+// console.log(Math.random() * 10);
+// const rand = Math.round(Math.random() * 10);
+// console.log(rand);
+
+
+// .............................................
+
+// date.js class
+
+
