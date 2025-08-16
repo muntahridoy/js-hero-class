@@ -965,12 +965,61 @@
 // [x, y] = [y, x];
 // console.log(x, y);
 
-// // ...............................................
-// // milestone  module :21 max.js class
-// if (disa > salman) {
-//  console.log();
- 
- 
-// } else {
- 
-// }
+// ...............................................
+// milestone  module :21 max.js class
+
+const disha = 56;
+const salman = 79;
+if (disha > salman) {
+  console.log('Disha will get the strawberry');
+} else {
+  console.log('Salman will eat the strawberry');
+}
+
+// inside a function
+function getMax(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+
+const max1 = getMax(96, 79);
+const max2 = getMax(66, 89);
+const ultimateMax = getMax(max1, max2);
+console.log('max is:', ultimateMax);
+
+// max3.js class
+const jim = 256;
+const tim = 89;
+const kim = 678;
+
+if (jim > tim && jim > kim) {
+  console.log('Jim is the ultimate boss');
+} else if (tim > jim && tim > kim) {
+  console.log('Tim is the boss');
+} else {
+  console.log('Kim is the kardashians boss');
+}
+
+function maxOfThree(num1, num2, num3) {
+  if (num1 > num2 && num1 > num3) {
+    return num1;
+  } else if (num2 > num1 && num2 > num3) {
+    return num2;
+  } else {
+    return num3;
+  }
+}
+const max = maxOfThree(986, 7859, 8258);
+console.log('max is:', max);
+
+// min.js class
+const min = Math.min(jim, tim, kim);
+console.log('min is:', min);
+
+const maxof = Math.max(12, 55, 66, 77);
+console.log('max is:', maxof);
+
+// ................................................
