@@ -396,13 +396,6 @@
 //   console.log(`${name}: ${status}`);
 // }
 
-
-
-
-
-
-
-
 // .............................................
 // new
 
@@ -429,16 +422,6 @@
 // for (const marks of exam_marks) {
 //   console.log(marks);
 // }
-
-
-
-
-
-
-
-
-
-
 
 // .............................................
 // copy.js part (Module:18_7) 2d dimensional array Matrix
@@ -602,8 +585,6 @@
 // const bigNumber = tenTimes(99);
 // console.log('output', bigNumber);
 
-
-
 // .............................................
 // // recap.js class
 // function add(price1, price2) {
@@ -655,7 +636,6 @@
 // console.log(isOdd(10));
 // console.log(isOdd(7));
 
-
 // .............................................
 // various-params.js class
 
@@ -703,7 +683,6 @@
 //   return age;
 // }
 
-
 // .............................................
 // // array.operation.js
 // /**
@@ -726,9 +705,6 @@
 // const numbs = [54, 62, 12, 6];
 // const sum = sumOfNumbers(numbs);
 // console.log('Sum of numbers is', sum);
-
-
-
 
 // .............................................
 
@@ -852,7 +828,6 @@
 // const isLeap4 = isLeapYear2(2052);
 // console.log(isLeap, isLeap2, isLeap3, isLeap4);
 
-
 // .............................................
 
 // // odd.average.js class
@@ -921,10 +896,6 @@
 // console.log(uniqueArray1);
 // console.log(uniqueArray2);
 
-
-
-
-
 // .............................................
 
 // math.js class
@@ -954,9 +925,30 @@
 // const rand = Math.round(Math.random() * 10);
 // console.log(rand);
 
-
 // .............................................
 
-// date.js class
+// // date.js class
 
+// const today = new Date();
+// const date = new Date('2062-10-19');
+// console.log(date.getMonth());
+// console.log(date.getDay());
 
+// const specificDate = new Date(2091, 0, 26);
+// console.log(specificDate);
+// specificDate.setMonth(10);
+// console.log(specificDate.toLocaleString('en-GB'));
+
+// // unix epoc
+
+// ..............................................
+// swap.js class
+
+let a = 5;
+let b = 7;
+
+console.log(a, b);
+a = b;
+b = a;
+
+console.log(a, b);
