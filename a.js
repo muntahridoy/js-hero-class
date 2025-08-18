@@ -1024,37 +1024,153 @@
 
 // ................................................
 
-// tallest.js class
-const heights = [65, 66, 72, 78, 60];
+// // tallest.js class
+// const heights = [65, 66, 72, 78, 60];
 
-function getMax(numbers) {
-  let max = numbers[0];
-  for (const num of numbers) {
-    if (num > max) {
-      max = num;
-    }
-    // console.log(num);
-  }
-  return max;
-}
+// function getMax(numbers) {
+//   let max = numbers[0];
+//   for (const num of numbers) {
+//     if (num > max) {
+//       max = num;
+//     }
+//     // console.log(num);
+//   }
+//   return max;
+// }
 
-const max = getMax(heights);
-console.log('max value is', max);
+// const max = getMax(heights);
+// console.log('max value is', max);
 
-// smallest number
+// // smallest number
 
-function getMin(numbers) {
-  let min = numbers[0];
-  for (const num of numbers) {
-    if (num < min) {
-      min = num;
-    }
-    // console.log(num);
-  }
-  return min;
-}
+// function getMin(numbers) {
+//   let min = numbers[0];
+//   for (const num of numbers) {
+//     if (num < min) {
+//       min = num;
+//     }
+//     // console.log(num);
+//   }
+//   return min;
+// }
 
-const min = getMin(heights);
-console.log('min value is', min);
+// const min = getMin(heights);
+// console.log('min value is', min);
 
 // ................................................
+// wood.js class
+
+// /**
+//  *
+//  * chair  3 cft
+//  * table  10 cft
+//  * bed 50 cft
+//  */
+
+// function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
+//   const perChairWood = 3;
+//   const perTableWood = 10;
+//   const perBedWood = 50;
+//   const chairTotalWood = chairQuantity * perChairWood;
+//   const tableTotalWood = tableQuantity * perTableWood;
+//   const bedTotalWood = bedQuantity * perBedWood;
+
+//   const totalWood = chairTotalWood + tableTotalWood + bedTotalWood;
+//   return totalWood;
+// }
+
+// const wood = woodQuantity(30, 5, 9);
+// console.log('total wood required:', wood);
+
+// /**
+//  *
+//  * shirt price 500
+//  * pant price 300
+//  * shoe price 900
+//  */
+
+// function shopping(shirtQuantity, pantQuantity, shoeQuantity) {
+//   const perShirtPrice = 500;
+//   const perPantPrice = 300;
+//   const perShoePrice = 900;
+
+//   const shirtTotalPrice = shirtQuantity * perShirtPrice;
+//   const pantTotalPrice = pantQuantity * perPantPrice;
+//   const shoeTotalPrice = shoeQuantity * perShoePrice;
+
+//   const totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
+//   return totalPrice;
+// }
+
+// const price = shopping(10, 5, 2);
+// console.log('total price:', price);
+
+// ...................................................
+
+// // min.js class
+// const prices = [20000, 16000, 50000, 100000, 12000, 30000, 35000];
+
+// function getMin(numbers) {
+//   let min = numbers[0];
+//   for (const num of numbers) {
+//     // console.log(num);
+
+//     if (num < min) {
+//       min = num;
+//     }
+//   }
+//   return min;
+// }
+
+// const cheap = getMin(prices);
+// console.log('cheap price is:', cheap);
+
+// ................................................
+
+// // cheapest.js class
+
+// const phones = [
+//   { name: 'htc', price: 27000, color: 'black', camera: '12mp', isNew: true },
+//   { name: 'xiaomi', price: 22000, color: 'black', camera: '12mp', isNew: true },
+//   { name: 'oppo', price: 19000, color: 'black', camera: '12mp', isNew: true },
+//   { name: 'walton', price: 12000, color: 'black', camera: '12mp', isNew: true },
+//   { name: 'nokia', price: 15000, color: 'black', camera: '12mp', isNew: true },
+//   { name: 'realme', price: 23000, color: 'black', camera: '12mp', isNew: true },
+// ];
+
+// function getCheapestPhone(phones) {
+//   let min = phones[0];
+//   for (const phone of phones) {
+//     // console.log(phone);
+//     if (phone.price < min.price) {
+//       // object detect korar joono price lagaise
+//       min = phone;
+//     }
+//   }
+//   return min;
+// }
+// const cheap = getCheapestPhone(phones);
+// console.log('cheapest phone is:', cheap);
+
+// ................................................
+
+// total.js class
+
+const products = [
+  { name: 'jaket', price: 3000, quantity: 7 },
+  { name: 't-shirt', price: 1200, quantity: 15 },
+  { name: 'shirt', price: 1000, quantity: 10 },
+  { name: 'pant', price: 1500, quantity: 8 },
+];
+
+function getShoppingTotal(products) {
+  let total = 0;
+  for (const product of products) {
+    // const productTotal = product.price * product.quantity;
+    total = total + product.price;
+  }
+  return total;
+}
+
+const total = getShoppingTotal(products);
+console.log('Total price is:', total);
