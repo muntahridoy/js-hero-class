@@ -1199,8 +1199,28 @@
 // discount.js class
 /**
  * upto 100---> 100
- * more than 100--->90
+ * more than 101-200--->90
  * more than 200--->70
  *
- * 
+ *
  */
+
+// 1 portion 
+
+function discountedetPrice(price) {
+  if (price <= 100) {
+    const discountedPrice = price;
+    return discountedPrice;
+  } else if (price > 100 && price <= 200) {
+    const discountedPrice = price - price * 0.1;
+    return discountedPrice;
+  } else {
+    const discountedPrice = price - price * 0.2;
+    return discountedPrice;
+  }
+}
+
+const price = discountedetPrice(150);
+console.log(price);
+
+// 2 portion
