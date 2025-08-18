@@ -1154,23 +1154,53 @@
 
 // ................................................
 
-// total.js class
+// // total.js class
 
-const products = [
-  { name: 'jaket', price: 3000, quantity: 7 },
-  { name: 't-shirt', price: 1200, quantity: 15 },
-  { name: 'shirt', price: 1000, quantity: 10 },
-  { name: 'pant', price: 1500, quantity: 8 },
-];
+// // 1 portion
 
-function getShoppingTotal(products) {
-  let total = 0;
-  for (const product of products) {
-    // const productTotal = product.price * product.quantity;
-    total = total + product.price;
-  }
-  return total;
-}
+// const products = [
+//   { name: 'jaket', price: 3000, quantity: 7 },
+//   { name: 't-shirt', price: 1200, quantity: 15 },
+//   { name: 'shirt', price: 1000, quantity: 10 },
+//   { name: 'pant', price: 1500, quantity: 8 },
+// ];
 
-const total = getShoppingTotal(products);
-console.log('Total price is:', total);
+// function getShoppingTotal(products) {
+//   let total = 0;
+//   for (const product of products) {
+//     total = total + product.price;
+//   }
+//   return total;
+// }
+
+// const total = getShoppingTotal(products);
+// console.log('Total price is:', total);
+
+// // 2 portion
+// const products2 = [
+//   { name: 'jaket', price: 3000, quantity: 7 },
+//   { name: 't-shirt', price: 1200, quantity: 15 },
+//   { name: 'shirt', price: 1000, quantity: 10 },
+//   { name: 'pant', price: 1500, quantity: 8 },
+// ];
+
+// function getTotalPrice(products) {
+//   let total = 0;
+//   for (const product of products) {
+//     const productTotal = product.price * product.quantity;
+//     total = total + productTotal;
+//   }
+//   return total;
+// }
+
+// const totalPrice = getTotalPrice(products);
+// console.log('Total price is:', totalPrice);
+
+// discount.js class
+/**
+ * upto 100---> 100
+ * more than 100--->90
+ * more than 200--->70
+ *
+ * 
+ */
