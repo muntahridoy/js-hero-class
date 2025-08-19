@@ -1196,9 +1196,6 @@
 // const totalPrice = getTotalPrice(products);
 // console.log('Total price is:', totalPrice);
 
-
-
-
 // ......................................................
 
 // discount.js class
@@ -1228,9 +1225,86 @@
 
 // ................................................
 
-// layyar-discount.js
+// // layyar-discount.js class
 
+// /**
+//  *
+//  * first 100 --> 100
+//  * 101 to 200 --> 90
+//  * above 200 --> 70
+//  *
+//  */
 
+// function layeredDiscountedTotal(quantity) {
+//   const first100Price = 100;
+//   const second100Price = 90;
+//   const above200Price = 70;
 
+//   if (quantity <= 100) {
+//     const total = quantity * first100Price;
+//     return total;
+//   } else if (quantity <= 200) {
+//     const first100Total = 100 * first100Price;
+//     const remainingQuantity = quantity - 100;
+//     const remainingTotal = remainingQuantity * second100Price;
+//     const total = first100Total + remainingTotal;
+//     return total;
+//   } else {
+//     const first100Total = 100 * first100Price;
+//     const second100Total = 100 * second100Price;
+//     const remainingQuantity = quantity - 200;
+//     const remainingTotal = remainingQuantity * above200Price;
+//     const total = first100Total + second100Total + remainingTotal;
+//     return total;
+//   }
+// }
 
+// const price = layeredDiscountedTotal(70);
+// console.log(price);
+
+// ................................................
+// // calculator.js class
+
+// function add(num1, num2) {
+//   const sum = num1 + num2;
+//   return sum;
+// }
+// function subtract(num1, num2) {
+//   return num1 - num2;
+// }
+
+// function multiply(num1, num2) {
+//   return num1 * num2;
+// }
+
+// function divide(num1, num2) {
+//   return num1 / num2;
+// }
+// function calculator(a, b, operation) {
+//   if (operation === 'add') {
+//     const result = add(a, b);
+//     return result;
+//   } else if (operation === 'subtract') {
+//     const result = subtract(a, b);
+//     return result;
+//   } else if (operation === 'multiply') {
+//     return multiply(a, b);
+//   } else if (operation === 'divide') {
+//     return divide(a, b);
+//   } else {
+//     return "Only 'add', 'subtract', 'multiply', 'divide' are allowed.";
+//   }
+// }
+
+// const result = calculator(5, 7, 'divide');
+// console.log(result);
+
+// .....................................................
+
+// validation.js class
+
+function multiply(num1, num2) {
+  const mult = num1 * num2;
+  return mult;
+}
 
