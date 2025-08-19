@@ -1196,6 +1196,11 @@
 // const totalPrice = getTotalPrice(products);
 // console.log('Total price is:', totalPrice);
 
+
+
+
+// ......................................................
+
 // discount.js class
 /**
  * upto 100---> 100
@@ -1205,22 +1210,27 @@
  *
  */
 
-// 1 portion 
+// function discountedPrice(quantity) {
+//   if (quantity <= 100) {
+//     const total = quantity * 100;
+//     return total;
+//   } else if (quantity <= 200) {
+//     const total = qauantity * 90;
+//     return total;
+//   } else {
+//     const total = quantity * 70;
+//     return total;
+//   }
+// }
 
-function discountedetPrice(price) {
-  if (price <= 100) {
-    const discountedPrice = price;
-    return discountedPrice;
-  } else if (price > 100 && price <= 200) {
-    const discountedPrice = price - price * 0.1;
-    return discountedPrice;
-  } else {
-    const discountedPrice = price - price * 0.2;
-    return discountedPrice;
-  }
-}
+// const total = discountedPrice(201);
+// console.log(total);
 
-const price = discountedetPrice(150);
-console.log(price);
+// ................................................
 
-// 2 portion
+// layyar-discount.js
+
+
+
+
+
