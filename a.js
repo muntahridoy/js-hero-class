@@ -1301,66 +1301,101 @@
 
 // .....................................................
 
-// validation.js class
+// // validation.js class
 
-// 1 method
+// // 1 method
 
-function multiply(num1, num2) {
-  if (typeof num1 !== 'number' || typeof num2 !== 'number') {
-    return 'please provide a number';
-  }
-  const mult = num1 * num2;
-  return mult;
-}
-const result = multiply(5, 'seven');
-// console.log(result)
+// function multiply(num1, num2) {
+//   if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+//     return 'please provide a number';
+//   }
+//   const mult = num1 * num2;
+//   return mult;
+// }
+// const result = multiply(5, 'seven');
+// // console.log(result)
 
-// 2 method
+// // 2 method
 
-function fullName(first, second) {
-  if (typeof first !== 'string') {
-    return 'First name should be a string';
-  } else if (typeof second !== 'string') {
-    return 'Second name should be a string';
-  }
-  const full = first + ' ' + second;
-  return full;
-}
+// function fullName(first, second) {
+//   if (typeof first !== 'string') {
+//     return 'First name should be a string';
+//   } else if (typeof second !== 'string') {
+//     return 'Second name should be a string';
+//   }
+//   const full = first + ' ' + second;
+//   return full;
+// }
 
-const full = fullName('Akmal');
-// console.log(full);
+// const full = fullName('Akmal');
+// // console.log(full);
 
-// 3 method
+// // 3 method
 
-function getPrice(product) {
-  if (typeof product !== 'object') {
-    return 'please provide an object';
-  }
-  const price = product.price;
-  return price;
-}
-// const price = getPrice({ //   name: 'leptop', //   price: 35000, //   color: 'black', //   camera: '12mp', //   isNew: true, // });
+// function getPrice(product) {
+//   if (typeof product !== 'object') {
+//     return 'please provide an object';
+//   }
+//   const price = product.price;
+//   return price;
+// }
+// // const price = getPrice({ //   name: 'leptop', //   price: 35000, //   color: 'black', //   camera: '12mp', //   isNew: true, // });
 
-const price = getPrice(5);
-// console.log(price);
+// const price = getPrice(5);
+// // console.log(price);
 
-// 4 method
+// // 4 method
 
-function getSecond(numbers) {
-  if (Array.isArray(numbers) !== false) {
-    return 'please provide an array';
-  }
-  const second = numbers[1];
-  return second;
-}
+// function getSecond(numbers) {
+//   if (Array.isArray(numbers) !== false) {
+//     return 'please provide an array';
+//   }
+//   const second = numbers[1];
+//   return second;
+// }
 
-// const second = getSecond(['akil']);
-const second = getSecond('akil');
+// // const second = getSecond(['akil']);
+// const second = getSecond('akil');
 
-// const second = getSecond(['7']);
-// const second = getSecond('7');
+// // const second = getSecond(['7']);
+// // const second = getSecond('7');
 
-// const second = getSecond([7]);
-// const second = getSecond(7);
+// // const second = getSecond([7]);
+// // const second = getSecond(7);
 
-console.log(second);
+// console.log(second);
+
+// extra class no title but focus object.js class
+
+const nayok = {
+  name: 'Akmal',
+  id: 12345,
+  address: 'Dhaka',
+  isSingle: true,
+  friends: ['Alia', 'Bipu', 'Capu'],
+  movies: [
+    { name: 'no.1', year: 2015 },
+    { name: 'no.2', year: 2018 },
+  ],
+  act: function () {
+    console.log('active like Undertaker American Bad Ass');
+  },
+  car: {
+    brand: 'tesla',
+    price: 5000000,
+    made: 2025,
+    manufacturer: {
+      name: 'tesla',
+      ceo: 'elon mask',
+      contry: 'USA',
+    },
+  },
+};
+// console.log(student.car);
+nayok.act();
+
+
+//go to link job: https://codixel.tech/
+
+// const date = '25.06.2025';
+// console.log(date);
