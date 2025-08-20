@@ -1365,37 +1365,75 @@
 
 // console.log(second);
 
-// extra class no title but focus object.js class
+// // extra class no title but focus object.js class
 
-const nayok = {
-  name: 'Akmal',
-  id: 12345,
-  address: 'Dhaka',
-  isSingle: true,
-  friends: ['Alia', 'Bipu', 'Capu'],
-  movies: [
-    { name: 'no.1', year: 2015 },
-    { name: 'no.2', year: 2018 },
-  ],
-  act: function () {
-    console.log('active like Undertaker American Bad Ass');
-  },
-  car: {
-    brand: 'tesla',
-    price: 5000000,
-    made: 2025,
-    manufacturer: {
-      name: 'tesla',
-      ceo: 'elon mask',
-      contry: 'USA',
-    },
-  },
-};
-// console.log(student.car);
-nayok.act();
+// const nayok = {
+//   name: 'Akmal',
+//   id: 12345,
+//   address: 'Dhaka',
+//   isSingle: true,
+//   friends: ['Alia', 'Bipu', 'Capu'],
+//   movies: [
+//     { name: 'no.1', year: 2015 },
+//     { name: 'no.2', year: 2018 },
+//   ],
+//   act: function () {
+//     console.log('active like Undertaker American Bad Ass');
+//   },
+//   car: {
+//     brand: 'tesla',
+//     price: 5000000,
+//     made: 2025,
+//     manufacturer: {
+//       name: 'tesla',
+//       ceo: 'elon mask',
+//       contry: 'USA',
+//     },
+//   },
+// };
+// // console.log(student.car);
+// console.log(nayok.act);
 
+// nayok.act();
 
 //go to link job: https://codixel.tech/
 
 // const date = '25.06.2025';
 // console.log(date);
+
+// .......................................................
+// array.js class
+
+// const products = [
+//   { name: 'phone', price: 12000 },
+//   { name: 'laptop', price: 82000 },
+// ];
+
+// products[0];
+// products[1];
+
+// const products = [15, 56, 87]
+// const products = {
+//   0: 15,
+//   1: 56,
+//   2: 87,
+// };
+
+// ...................................................
+// // arguments.js class
+// function add(num1, num2) {
+//   console.log(num1, num2);
+//   console.log(arguments[6]);
+// }
+// add(12, 13, 14, 15, 16);
+
+// .......................................................
+// matched.js class
+
+const numbers = [45, 65, 23, 98, 19];
+
+for (let i = 0; i < numbers.length; i++){
+    const number = numbers[i];
+    console.log(number);
+    
+}
