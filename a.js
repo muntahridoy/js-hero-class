@@ -1449,30 +1449,33 @@
 //   console.log(date);
 // }
 
-const products = [
-  { id: 1, name: 'dell laptop', price: 12000 },
-  { id: 2, name: 'hp laptop', price: 15000 },
-  { id: 8, name: 'xiaomi phone', price: 22000 },
-  { id: 4, name: 'mac laptop', price: 170000 },
-  { id: 6, name: 'acer laptop', price: 19000 },
-  { id: 7, name: 'samsung phone', price: 25000 },
-  { id: 3, name: 'lenovo laptop', price: 10000 },
-  { id: 9, name: 'oppo phone', price: 19000 },
-  { id: 5, name: 'asus laptop', price: 18000 },
-];
+// const products = [
+//   { id: 1, name: 'dell laptop', price: 12000 },
+//   { id: 2, name: 'hp laptop', price: 15000 },
+//   { id: 8, name: 'xiaomi phone', price: 22000 },
+//   { id: 4, name: 'mac laptop', price: 170000 },
+//   { id: 6, name: 'acer laptop', price: 19000 },
+//   { id: 7, name: 'samsung phone', price: 25000 },
+//   { id: 3, name: 'lenovo laptop', price: 10000 },
+//   { id: 9, name: 'oppo phone', price: 19000 },
+//   { id: 5, name: 'asus laptop', price: 18000 },
+// ];
 
-// for (const product of products) {
-//   console.log(product);
+// // for (const product of products) {
+// //   console.log(product);
+// // }
+
+// function matchedProducts(products, search) {
+//   const matched = [];
+//   for (const product of products) {
+//     if (product.name.toLowerCase().includes(search.toLowerCase())) {
+//       matched.push(product);
+//     }
+//   }
+//   return matched;
 // }
+// const result = matchedProducts(products, 'phone');
+// console.log(result);
 
-function matchedProducts(products, search) {
-  const matched = [];
-  for (const product of products) {
-    if (product.name.toLowerCase().includes(search.toLowerCase())) {
-      matched.push(product);
-    }
-  }
-  return matched;
-}
-const result = matchedProducts(products, 'phone');
-console.log(result);
+
+// Milestone-5 module 24-1
