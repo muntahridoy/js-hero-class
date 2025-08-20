@@ -1479,3 +1479,15 @@
 
 
 // Milestone-5 module 24-1
+
+
+// console.log('25-february-2025');
+
+// Must Research 
+// string number boolean
+// variable 
+// condition
+// array
+// loop
+// object
+// function
