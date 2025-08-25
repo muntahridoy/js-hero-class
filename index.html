@@ -24,8 +24,8 @@
         <h1>Welcome to my Dom (Document Object Model)</h1>
         <ul>
           <li>Shafayet</li>
-          <li>bonobashi</li>
-          <li>Jalali set</li>
+          <li class="foreign">bonobashi</li>
+          <li id="band">Jalali set</li>
           <li>Dom de re baba</li>
         </ul>
       </section>
@@ -37,9 +37,10 @@
           <li>Burger</li>
           <li>Sandwich</li>
           <li>Ice Cream</li>
-          <li>Chocolate</li>
-          <li>Cake</li>
-          <li>Coffee</li>
+          <li class="foreign">Chocolate</li>
+          <li class="band">Ice Cream</li>
+          <li class="foreign">Cake</li>
+          <li class="foreign">Coffee</li>
         </ul>
       </section>
     </main>
@@ -68,6 +69,17 @@
       // get by Id
       const foodTitleH1 = document.getElementById('food-title');
       console.log(foodTitleH1.innerText);
+
+      const bandElement = document.getElementById('band');
+      bandElement.innerText = 'Jalali Set a new band name here ';
+
+      // get elements by class name
+      const foreignElements = document.getElementsByClassName('foreign');
+      console.log(foreignElements);
+
+      for (const element of foreignElements) {
+        console.log(element.innerText);
+      }
     </script>
     <script src="hello.js"></script>
   </body>
